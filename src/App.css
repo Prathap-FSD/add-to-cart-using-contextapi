@@ -1,0 +1,144 @@
+.primColor{
+  color: #5300ff;
+}
+.App{
+  /* background-color:#360091; */
+}
+.price{
+  font-size: 20px;
+}
+.addBtn{
+  width: 100%;
+}
+.navbar{
+  background-color:#5300ff !important;
+}
+.navBrand{
+  text-decoration: none;
+  color: #fff !important;
+  font-weight: 600;
+}
+.navBtn{
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border:1px solid #fff;
+  color: #fff;
+  font-weight: 600;
+}
+.navBtn:hover{
+  background-color: #fff;
+  color: #5300ff;
+  font-weight: 600;
+}
+.card{
+  height: 100%;
+}
+.card:hover{
+  box-shadow: 2px 2px 10px #b1b1b1;
+}
+img{
+  width: 100%;
+  height: 50%;
+}
+.card-footer{
+  border-top: none;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.btn{
+  border: 1px solid #5300ff;
+  font-weight: 600;
+}
+.btn:hover{
+  background-color: #5300ff;
+  color: #fff;
+}
+.btn:active{
+  background-color: #5300ff !important;
+  border: 1px solid #5300ff !important;
+  color: #fff  !important;
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.cartBg{
+  box-shadow: 0px 0px 8px #b5b3b3;
+}
+.proImg{
+  width: 40%;
+}
+.proImg img{
+  width: 100%;
+  height: 100%;
+}
+
+.proItem{
+  display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    border-bottom: 1px solid lightgray;
+}
+.quantity{
+  border: 1px solid #e4d7ff;
+  width: 100px;
+  font-weight: 700;
+  color: #5300ff;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.quantity button{
+  width: 34px;
+  font-weight: 700;
+  color: #5300ff;
+  font-size: 20px;
+  border: 0;
+}
+.proQuantity, .rightCol {
+  margin-left: auto;
+}
+.proInfo{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rBtn{
+  border: 1px solid #e4d7ff;
+ 
+}
+.piece{
+  color:#979797;
+}
+.proQuantity{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.rightCol{
+  padding: 20px;
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  height: 100%;
+  top: 106px;
+}
+.sum{
+  margin-left: 0px !important;
+}
+.innerSum{
+  display: flex;
+  justify-content: space-between;
+}
+.cartPageBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50vh;
+  align-items: center;
+}
