@@ -14,7 +14,6 @@ function Home() {
    if(existingIndexItem !== -1){
     const updatedCartItems = [...cartItems.items];
     updatedCartItems[existingIndexItem].noOfProduct += 1
-
     cartItems.setItems(updatedCartItems)
    }else{
     cartItems.setItems([...cartItems.items, {...item, noOfProduct: item.noOfProduct +1}])
