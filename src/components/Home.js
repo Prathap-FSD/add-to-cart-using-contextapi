@@ -8,9 +8,19 @@ function Home() {
  
   let cartItems = useContext(Context)
 
-function handleCart(item){
-  cartItems.setItems([...cartItems.items, item])
-}
+  function handleCart(item) {
+   let existingIndexItem = cartItems.items.findIndex((card)=> card.id === item.id)
+
+   if(existingIndexItem !== -1){
+    const updatedCartItems = [...cartItems.items];
+    updatedCartItems[existingIndexItem].noOfProduct += 1
+
+    cartItems.setItems(updatedCartItems)
+   }else{
+    cartItems.setItems([...cartItems.items, {...item, noOfProduct: item.noOfProduct +1}])
+   }
+  }
+  
 
   return (
     <div className='container'>

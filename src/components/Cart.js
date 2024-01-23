@@ -42,7 +42,7 @@ setTotal(a)
               <h6><span className='primColor'>Brand :</span> {product.brand}</h6>
               <h6><span className='primColor'>Category :</span> {product.category}</h6>
               <h6><span className='primColor'>Rating  :</span> {product.rating}⭐</h6>
-              <button className='rBtn align-self-start' onClick={()=>HandleDelete(product.id)} > <i className="primColor bi bi-trash-fill"></i> Remove item</button>
+              <button className='rBtn align-self-start' onClick={()=>HandleDelete(product.id)} > <i className="SeconColor bi bi-trash-fill"></i> Remove item</button>
             </div>
           </div>
 
