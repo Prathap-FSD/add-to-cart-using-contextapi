@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Context } from './contextApi'
 import { useNavigate } from 'react-router'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Cart() {
   let cartItem = useContext(Context)
@@ -13,6 +15,7 @@ function Cart() {
  function HandleDelete(id){
   let removeItem = cartItem.items.filter((item)=> item.id !== id)
   cartItem.setItems(removeItem)
+  toast.warning('Product Removed from Cart')
  }
  let [total, setTotal] = useState(0)
 

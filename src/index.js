@@ -5,13 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { ContextProvider } from './components/contextApi';
-
+import { ToastContainer } from 'react-toastify';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
   {/* <React.StrictMode> */}
   <ContextProvider>
     <App />
+    <ToastContainer/>
   </ContextProvider>
   {/* </React.StrictMode> */}
   </BrowserRouter>

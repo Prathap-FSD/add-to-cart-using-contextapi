@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import datalist from './datalist.json'
 import { Context } from './contextApi'
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function Home() {
@@ -15,8 +16,10 @@ function Home() {
     const updatedCartItems = [...cartItems.items];
     updatedCartItems[existingIndexItem].noOfProduct += 1
     cartItems.setItems(updatedCartItems)
+    toast.warning('Product already in Cart')
    }else{
     cartItems.setItems([...cartItems.items, {...item, noOfProduct: item.noOfProduct +1}])
+    toast.success('Product added to Cart')
    }
   }
   
